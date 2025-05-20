@@ -4,7 +4,7 @@
 ## 概要(プロジェクトに参加)
 父の勤める会社で行われる9人制バレーボールの社内試合のスコアをリアルタイムに管理するために制作した、Unity製の点数管理ソフトです。試合の進行に合わせてスコアを加算・減算でき、セット終了ごとのスコア保存やコートチェンジも対応しています。実際に試合中継で使用され、社内でも高評価をいただきました。
 
-![プレイGIF](https://github.com/kiri070/ValleyScoreManager/raw/main/Assets/Gifs/portfolio02.gif)
+
 
 - 使用された様子
   Youtubeリンク→ https://www.youtube.com/live/yyWcXD3Muqw?t=8044 （該当箇所に時間指定をしています）
