@@ -5,20 +5,29 @@ using UnityEngine.UI;
 
 public class ScoreButtonManager : MonoBehaviour
 {
-    public Text score1Text; //箱作成
-    public Text score2Text; //箱作成
-    public Text SetCount; //セット数の箱
-    public Text Team1; //箱作成
-    public Text Team2; //箱作成
-    public Text score1_Save1; //スコアを保存
+    [Header("各チームの点数を表示するテキスト")]
+    public Text score1Text; 
+    public Text score2Text;
+
+    [Header("現在のセット数を表示するテキスト")]
+    public Text SetCount;
+
+    [Header("各チーム名を表示するテキスト")]
+    public Text Team1; 
+    public Text Team2;
+
+    [Header("各マッチのスコアを表示するテキスト")]
+    public Text score1_Save1; 
     public Text score1_Save2;
     public Text score1_Save3;
     public Text score2_Save1;
     public Text score2_Save2;
     public Text score2_Save3;
+
+
     public int score1 = 0;
     public int score2 = 0;
-    public int SetNum = 1; //セット数
+    public int SetNum = 1; //初期セット数
     private int ScoreSaveCount = 1;
 
     //色管理のための変数
@@ -40,7 +49,6 @@ public class ScoreButtonManager : MonoBehaviour
     //各マッチのスコア保存リスト
     public List<int> Score1_Save = new List<int>();
     public List<int> Score2_Save = new List<int>();
-    //public List<int> ListSave = new List<int>();
 
 
     public void Start()
@@ -170,10 +178,6 @@ public class ScoreButtonManager : MonoBehaviour
 
                 }
 
-
-                ////スコアリセット
-                //score1 = 0; score2 = 0;
-
                 //入れ替えたスコアを適用
                 score1Text.text = score1.ToString();
                 score2Text.text = score2.ToString();
@@ -214,39 +218,39 @@ public class ScoreButtonManager : MonoBehaviour
         Text text2_2 = score2_Save2.GetComponent<Text>();
         Text text2_3 = score2_Save3.GetComponent<Text>();
 
-        //スコア2_1よりスコア1_1が多きれば
+        //スコア2_1よりスコア1_1が大きれば
         if (Score1_1 > Score2_1)
         {
             text1_1.color = Color.red;
             text2_1.color = Color.white;
         }
-        //スコア1_1よりスコア2_1が多きれば
+        //スコア1_1よりスコア2_1が大きれば
         else if (Score2_1 > Score1_1)
         {
             text1_1.color = Color.white;
             text2_1.color = Color.red;
         }
 
-        //スコア2_2よりスコア1_2が多きれば
+        //スコア2_2よりスコア1_2が大きれば
         if (Score1_2 > Score2_2)
         {
             text1_2.color = Color.red;
             text2_2.color = Color.white;
         }
-        //スコア1_2よりスコア2_2が多きれば
+        //スコア1_2よりスコア2_2が大きれば
         else if (Score2_2 > Score1_2)
         {
             text1_2.color = Color.white;
             text2_2.color = Color.red;
         }
 
-        //スコア2_3よりスコア1_3が多きれば
+        //スコア2_3よりスコア1_3が大きれば
         if (Score1_3 > Score2_3)
         {
             text1_3.color = Color.red;
             text2_3.color = Color.white;
         }
-        //スコア1_3よりスコア2_3が多きれば
+        //スコア1_3よりスコア2_3が大きれば
         else if (Score2_3 > Score1_3)
         {
             text1_3.color = Color.white;
