@@ -11,7 +11,7 @@
 
 
 
-- 使用された様子
+- 使用された様子  
   Youtubeリンク→ https://www.youtube.com/live/yyWcXD3Muqw?t=8044 （該当箇所に時間指定をしています）
 
 ## 使用技術
