@@ -6,7 +6,7 @@
 
 ![プレイGIF](https://github.com/kiri070/ValleyScoreManager/raw/main/Assets/Gifs/portfolio02.gif)
 
-- 画面や機能の詳細はこちら
+- 画面や機能の詳細はこちら  
 動作映像 youtubeリンク→ https://youtu.be/WHMAR7zmwEI
 
 
